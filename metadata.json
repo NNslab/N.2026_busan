@@ -1,0 +1,6 @@
+{
+  "name": "釜山夏日旅遊手冊",
+  "description": "一個精緻的釜山夏日海邊風格旅遊手冊，包含行前注意事項與沛恩家/芸岑家分流行程指南。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

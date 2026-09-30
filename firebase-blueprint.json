@@ -1,0 +1,36 @@
+{
+  "entities": {
+    "messages": {
+      "title": "Messages",
+      "description": "Messages posted by travelers on the group message board",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the message"
+        },
+        "nickname": {
+          "type": "string",
+          "description": "Nickname of the sender",
+          "maxLength": 50
+        },
+        "content": {
+          "type": "string",
+          "description": "Content of the message",
+          "maxLength": 1000
+        },
+        "createdAt": {
+          "type": "integer",
+          "description": "Creation timestamp in milliseconds"
+        }
+      },
+      "required": ["id", "nickname", "content", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/messages/{messageId}": {
+      "schema": "messages",
+      "description": "Collection of board messages"
+    }
+  }
+}
